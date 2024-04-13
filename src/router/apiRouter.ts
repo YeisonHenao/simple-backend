@@ -1,4 +1,5 @@
 import express, { Request, Response, Router } from 'express';
+import userRouter from './userRouter';
 
 const apiRouter = Router();
 
@@ -7,9 +8,12 @@ apiRouter.get('/test', (req: Request, res: Response) => {
   res.send('Respuesta desde ruta1');
 });
 
-apiRouter.get('/test2', (req: Request, res: Response) => {
-  res.send('Respuesta desde ruta2');
-});
+apiRouter.get('/', (req: Request, res: Response) => {
+  res.send('Bienvenido al proyecto de backend')
+})
+
+apiRouter.use('/user', userRouter);
+
 
 // Exporta el enrutador
 export default apiRouter;
