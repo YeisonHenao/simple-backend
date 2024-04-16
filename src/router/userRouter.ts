@@ -10,13 +10,6 @@ userRouter.get('/', (req: Request, res: Response) => {
 
 userRouter.get('/list', userController.list)
 
-userRouter.get('/users/:id', (req: Request, res: Response) => {
-  const userId = req.params.id;
-  const user = userController.getUserById(userId);
-  if (!user) {
-    return res.status(404).json({ error: 'Usuario no encontrado' });
-  }
-  res.json(user);
-});
+userRouter.get('/:id', userController.getUserById);
 
 export default userRouter

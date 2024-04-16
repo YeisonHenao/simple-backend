@@ -1,4 +1,4 @@
-import express, { Request, Response, Router } from 'express';
+import { Request, Response, Router } from 'express';
 import userRouter from './userRouter';
 
 const apiRouter = Router();

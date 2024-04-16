@@ -1,18 +1,18 @@
 [
   {
-    "id":1,
-    "user":"admin",
-    "password":"admin",
-    "name":"Admin",
-    "email":"admin@mail.com",
-    "phone":"300000000"
+    "id": 1,
+    "user": "admin",
+    "password": "admin",
+    "name": "Admin",
+    "email": "admin@mail.com",
+    "phone": "300000000"
   },
   {
-    "id":2,
-    "user":"user",
-    "password":"user",
-    "name":"User",
-    "email":"user@mail.com",
-    "phone":"300000000"
+    "id": 2,
+    "user": "user",
+    "password": "user",
+    "name": "User",
+    "email": "user@mail.com",
+    "phone": "300000000"
   }
 ]
